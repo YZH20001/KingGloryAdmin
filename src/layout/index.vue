@@ -3,7 +3,7 @@
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside" />
     <sidebar class="sidebar-container" />
     <div :class="{hasTagsView:needTagsView}" class="main-container">
-      <div :class="{'fixed-header':fixedHeader}">
+      <div :class="{'fixed-header':fixedHeader}" class="fixed-header">
         <navbar />
         <tags-view v-if="needTagsView" />
       </div>
@@ -98,5 +98,8 @@ export default {
 
   .mobile .fixed-header {
     width: 100%;
+  }
+  .sidebar-container{
+    user-select: none;
   }
 </style>

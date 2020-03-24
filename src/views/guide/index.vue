@@ -5,7 +5,7 @@
       <a href="https://github.com/kamranahmedse/driver.js" target="_blank">driver.js.</a>
     </aside>
     <el-button icon="el-icon-question" type="primary" @click.prevent.stop="guide">
-      Show Guide
+      开始引导
     </el-button>
   </div>
 </template>
